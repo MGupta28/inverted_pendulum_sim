@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <node pkg="inverted_pendulum_sim" type="inverted_pendulum_sim_node.py" name="InvertedPendulum" output="screen"
+          required="true"/>
+    <!-- <node pkg="inverted_pendulum_sim" type="setparam.py" name="setparam"/> -->
+    <node pkg="inverted_pendulum_sim" type="pid_control.py" name="pid_control" output="screen"/>
+</launch>
